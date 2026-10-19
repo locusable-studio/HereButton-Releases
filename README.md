@@ -65,6 +65,5 @@ Click a combination to run its steps in order. Execution stops if a step fails. 
 Here Button depends on the source app's macOS Accessibility support. Some visible buttons cannot be picked, and some controls only work when their app is in the foreground.
 
 - WeChat for macOS 4.1.15: previous local testing did not expose usable controls for the chat interface or sidebar, so those buttons could not be pinned.
-- ChatGPT for macOS: some buttons do not expose a supported press action and cannot be pinned. This does not apply to every control in the app.
 
 These observations apply to specific app versions and controls. Behavior may change when the source app updates. If you encounter an unsupported button, contact us using the email above.
