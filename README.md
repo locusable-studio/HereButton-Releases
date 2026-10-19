@@ -6,11 +6,9 @@
 
 ## 官方演示
 
-拖动按钮面板到屏幕边缘，鼠标离开后收起，悬停时展开。点击封面观看官网演示视频：
+拖动按钮面板到屏幕边缘，鼠标离开后收起，悬停时展开。
 
-[![Here Button 屏幕边缘吸附与展开演示](https://locusable.com/assets/here-button/edge-docking-poster.jpg)](https://locusable.com/assets/here-button/edge-docking.mp4)
-
-[观看视频（MP4）](https://locusable.com/assets/here-button/edge-docking.mp4) · [在官网查看演示](https://locusable.com/here-button/)
+https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
 ## 下载与安装
 
