@@ -2,6 +2,10 @@
 
 English · [简体中文](README.zh-CN.md)
 
+> [!IMPORTANT]
+> 1. **Unsupported controls:** Buttons that do not expose control information or a press/selection action through macOS Accessibility cannot be pinned. This can include buttons drawn inside custom interfaces or canvases; support depends on the individual control.
+> 2. **Controls blocked inside the source app:** If a dialog, menu, or overlay in the source app blocks access to the original button, the pin may stop working. Dismiss the blocking component and return to the original view before trying again.
+
 Pin supported buttons from your Mac apps to a floating panel. Keep frequently used actions together, move the panel wherever you need it, or dock it to the edge of your screen.
 
 Website: [locusable.com/here-button](https://locusable.com/here-button/)
@@ -43,6 +47,7 @@ In the release version, choose **Check for Updates…** from the menu bar to ins
 
 - **Why is there no main window?** Here Button runs through its floating panel and the icon in the macOS menu bar.
 - **Why can't I pick a button?** Check that Accessibility access is enabled and keep the source page open. If the source app does not expose an actionable control, that button cannot be pinned. See [Compatibility](#compatibility) for examples.
+- **Why did a pin stop working?** Check whether the original page is still open, the button is enabled, and a dialog, menu, or overlay inside the source app is blocking it. Dismiss the blocking component or reopen the page, then try again. If the app's interface has changed, remove the pin and pick the button again.
 - **Why does clicking a pin switch apps?** This is the default behavior. You can enable background triggering from the pin's context menu; support depends on the source app.
 - **Need help or want to report a problem?** Email [locusablestudio@gmail.com](mailto:locusablestudio@gmail.com) with your macOS version, Here Button version, source app, and steps to reproduce the issue.
 
