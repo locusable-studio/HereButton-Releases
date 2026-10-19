@@ -78,6 +78,4 @@ https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
 ## 兼容性
 
-Here Button 依赖来源 App 提供的 macOS 辅助功能支持。有些可见按钮无法选取，或只能在来源 App 位于前台时执行。
-
-支持情况取决于具体控件，也可能随来源 App 更新而变化。已固定的按钮无法匹配原控件时，可重新选取。反馈不支持的控件时，请同时提供来源 App 版本，以及对应页面或按钮。
+已知限制见[兼容性列表](COMPATIBILITY.zh-CN.md)。发现不兼容的应用或控件，可[通过 Issues 补充反馈](https://github.com/locusable-studio/HereButton-Releases/issues/new?template=incompatible-app.yml)。

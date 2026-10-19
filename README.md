@@ -78,6 +78,4 @@ Turning off the Beta option hides both the creation button and saved combination
 
 ## Compatibility
 
-Here Button depends on the source app's macOS Accessibility support. Some visible buttons cannot be picked, and some controls only work when their app is in the foreground.
-
-Support varies by control and may change when the source app updates. If a saved pin no longer matches its original control, pick the button again. When reporting an unsupported control, include the source app's version and the page or button involved.
+See the [compatibility list](COMPATIBILITY.md) for known limitations. To report an incompatible app or control, [open a compatibility issue](https://github.com/locusable-studio/HereButton-Releases/issues/new?template=incompatible-app.yml).
