@@ -1,68 +1,70 @@
 # Here Button
 
-把其他 App 中支持辅助功能的按钮固定到桌面浮动面板。集中放置常用操作，拖动面板调整位置，也可吸附到屏幕边缘。
+English · [简体中文](README.zh-CN.md)
 
-官网：[locusable.com/here-button](https://locusable.com/here-button/)
+Pin supported buttons from your Mac apps to a floating panel. Keep frequently used actions together, move the panel wherever you need it, or dock it to the edge of your screen.
 
-## 官方演示
+Website: [locusable.com/here-button](https://locusable.com/here-button/)
 
-拖动按钮面板到屏幕边缘，鼠标离开后收起，悬停时展开。
+## Demo
+
+Dock the panel to a screen edge. It tucks away when you move the pointer away and expands on hover.
 
 https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
-## 下载与安装
+## Download and install
 
-需要 macOS 14 或更高版本，正式安装包同时支持 Apple Silicon 和 Intel Mac。
+Requires macOS 14 or later. The release installer supports both Apple Silicon and Intel Macs.
 
-目前尚未正式发布，支付接入仍在准备中。以下为正式发布后的下载入口和安装步骤；首个 Release 发布前，固定下载链接暂不可用。
+Here Button has not been released yet. Purchasing is still being set up. The download links and instructions below are for the upcoming release; the direct download link will become available when the first release is published.
 
-- [下载最新版 HereButton_latest.dmg](https://github.com/locusable-studio/HereButton-Releases/releases/latest/download/HereButton_latest.dmg)
-- [查看版本与更新说明](https://github.com/locusable-studio/HereButton-Releases/releases)
+- [Download HereButton_latest.dmg](https://github.com/locusable-studio/HereButton-Releases/releases/latest/download/HereButton_latest.dmg)
+- [Browse releases and release notes](https://github.com/locusable-studio/HereButton-Releases/releases)
 
-1. 下载并打开 `HereButton_latest.dmg`。
-2. 将 `Here Button.app` 拖到 `Applications`（应用程序）文件夹。
-3. 从“应用程序”打开 Here Button，然后在访达中推出安装磁盘。
-4. 点击 App 内的“授权辅助功能”，在“系统设置 → 隐私与安全性 → 辅助功能”中开启 Here Button。若列表中没有它，点击“＋”添加“应用程序”中的 `Here Button.app`。
-5. 返回 App，权限生效后即可选取按钮。Here Button 主要通过浮动按钮面板和菜单栏图标操作，没有独立的管理主窗口。
+1. Download and open `HereButton_latest.dmg`.
+2. Drag `Here Button.app` into the `Applications` folder.
+3. Open Here Button from Applications, then eject the installer disk in Finder.
+4. Click **Allow Accessibility Access** in the app. Go to **System Settings → Privacy & Security → Accessibility** and enable Here Button. If it is missing from the list, click **+** and add `Here Button.app` from Applications.
+5. Return to the app. Once access is enabled, you can start picking buttons. Here Button uses a floating panel and a menu bar icon rather than a separate management window.
 
-辅助功能权限用于读取和触发你选取的原 App 控件。目标 App 也需要提供对应的辅助功能支持；并非所有可见按钮都能绑定。
+Accessibility access lets Here Button read and trigger the controls you select. The source app must also expose those controls through macOS Accessibility; some visible buttons cannot be pinned.
 
-## 快速上手
+## Quick start
 
-1. 打开目标 App，进入需要固定按钮的页面。
-2. 按 `Control + Option + P`，也可点击菜单栏的“选取新按钮…”。
-3. 将鼠标移到按钮上，确认高亮后点击，即可添加到浮动面板；按 `Esc` 取消。选取时不会执行原按钮。
-4. 点击面板中的按钮触发原控件；默认会切换到来源 App。右键可重命名、移除或设置“后台触发”。
-5. 拖动面板边缘调整位置；拖到屏幕左右边缘可吸附收起。菜单栏可调整自动收起及悬停展开设置。
+1. Open the source app and navigate to the button you want to pin.
+2. Press `Control + Option + P`, or choose **Pick a New Button…** from the menu bar.
+3. Move the pointer over the button, confirm the highlight, and click to add it to the panel. Press `Esc` to cancel. Picking a button does not trigger its action.
+4. Click a pin to trigger the original control. By default, Here Button brings the source app forward first. Right-click a pin to rename or remove it, or to enable background triggering.
+5. Drag the panel's edges to move it. Dock it to the left or right edge of the screen to tuck it away. The menu bar has separate options for automatically hiding the panel and expanding it on hover.
 
-正式版可在菜单栏选择“检查更新…”安装新版，无需每次重新下载安装包。面板设置和组合操作见下方说明。
+In the release version, choose **Check for Updates…** from the menu bar to install updates without downloading the installer again.
 
-## 常见问题
+## FAQ
 
-- **看不到主窗口？** 这是正常行为，使用桌面浮动面板和屏幕顶部的菜单栏图标即可。
-- **无法选取某个按钮？** 先确认辅助功能权限已开启，并让目标页面保持打开。目标 App 未暴露可执行的辅助功能控件时，该按钮无法绑定，具体示例见[兼容性](#兼容性)。
-- **触发后会切换 App？** 默认如此；可右键按钮开启“后台触发”，是否生效取决于来源 App 的辅助功能实现。
-- **需要帮助或反馈问题？** 请联系 [locusablestudio@gmail.com](mailto:locusablestudio@gmail.com)，并提供 macOS 版本、Here Button 版本、来源 App 和复现步骤。
+- **Why is there no main window?** Here Button runs through its floating panel and the icon in the macOS menu bar.
+- **Why can't I pick a button?** Check that Accessibility access is enabled and keep the source page open. If the source app does not expose an actionable control, that button cannot be pinned. See [Compatibility](#compatibility) for examples.
+- **Why does clicking a pin switch apps?** This is the default behavior. You can enable background triggering from the pin's context menu; support depends on the source app.
+- **Need help or want to report a problem?** Email [locusablestudio@gmail.com](mailto:locusablestudio@gmail.com) with your macOS version, Here Button version, source app, and steps to reproduce the issue.
 
-## 面板与按钮
+## Panel and pins
 
-点击面板中的按钮执行原操作，拖动面板边缘、按钮之间的空白或短行末尾调整位置。右键按钮可重命名、移除、隐藏或设置后台触发。
+Click a pin to perform its original action. Drag the panel's edges or the spaces between buttons to move the panel. Right-click a pin to rename, remove, or hide it, or to change its background-triggering setting.
 
-将面板拖到屏幕左侧或右侧边缘后可吸附。菜单栏可以分别控制自动收起和悬停展开。需要暂时保持展开时，关闭自动收起即可。
+Dock the panel to the left or right screen edge. **Automatically Hide When Docked** and **Automatically Expand on Hover** can be controlled separately from the menu bar. Turn off automatic hiding to keep the docked panel expanded.
 
-开启菜单栏的“启用隐藏分区 Beta”后，可通过面板底部箭头展开已隐藏按钮。关闭该选项不会删除按钮。
+Turn on **Enable Hidden Section Beta** in the menu bar to access hidden pins using the arrow at the bottom of the panel. Disabling this option does not delete your pins.
 
-## 组合按钮（Beta）
+## Combination buttons (Beta)
 
-在菜单栏开启“启用组合按钮 Beta”，点击面板中的“文件夹＋”入口创建组合。填写名称，添加至少两个操作步骤，可调整顺序并设置每步执行前的等待时间。
+Turn on **Enable Combination Buttons Beta** in the menu bar, then click the folder-plus button to create a combination. Give it a name and add at least two steps. You can reorder steps and set a delay before each one.
 
-点击组合按钮会按顺序执行，某一步失败后停止；再次点击运行中的组合可取消剩余步骤。右键组合可编辑、移除或设置后台触发。关闭 Beta 选项只隐藏新建入口，已保存的组合仍可使用。
+Click a combination to run its steps in order. Execution stops if a step fails. Click a running combination again to cancel the remaining steps. Right-click it to edit, remove, or change its background-triggering setting. Turning off the Beta option hides the creation button; saved combinations remain available.
 
-## 兼容性
+## Compatibility
 
-Here Button 依赖来源 App 提供的 macOS 辅助功能支持。有些可见按钮无法选取，或只能在来源 App 位于前台时执行。
+Here Button depends on the source app's macOS Accessibility support. Some visible buttons cannot be picked, and some controls only work when their app is in the foreground.
 
-- 微信 macOS 4.1.15：此前本机测试中未提供聊天界面和侧边栏的可用控件信息，这些按钮无法固定。
-- ChatGPT macOS：部分按钮未提供可执行的按下操作，无法固定；不代表所有按钮都不支持。
+- WeChat for macOS 4.1.15: previous local testing did not expose usable controls for the chat interface or sidebar, so those buttons could not be pinned.
+- ChatGPT for macOS: some buttons do not expose a supported press action and cannot be pinned. This does not apply to every control in the app.
 
-以上是特定版本与控件的测试结果，来源 App 更新后可能变化。遇到不支持的按钮，请通过上方联系方式反馈。
+These observations apply to specific app versions and controls. Behavior may change when the source app updates. If you encounter an unsupported button, contact us using the email above.
