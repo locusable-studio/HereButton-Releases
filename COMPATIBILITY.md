@@ -6,9 +6,15 @@ Here Button depends on the controls an app exposes through macOS Accessibility. 
 
 ## Known limitations
 
-- **WeChat for macOS — 4.1.15**
-  - Affected controls: buttons in the chat interface and sidebar.
-  - Observed behavior: usable Accessibility control information was not exposed in local testing, so these buttons could not be picked or pinned.
+### WeChat
+
+- **App name and version:** WeChat for macOS 4.1.15.
+- **macOS version:** Not recorded in the earlier test report.
+- **Here Button version:** Not recorded in the earlier test report.
+- **Affected page or button:** Buttons in the chat interface and sidebar.
+- **Steps to reproduce:** Open the WeChat chat interface, press `Control + Option + P` in Here Button, and try to pick a button in the chat interface or sidebar.
+- **Expected / actual behavior:** Expected: the button can be highlighted and pinned. Actual: usable Accessibility control information was not exposed in local testing, so these buttons could not be picked or pinned.
+- **Screenshot or recording:** Not attached.
 
 ## Report an incompatible app
 
