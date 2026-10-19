@@ -57,7 +57,16 @@ Click a pin to perform its original action. Drag the panel's edges or the spaces
 
 Dock the panel to the left or right screen edge. **Automatically Hide When Docked** and **Automatically Expand on Hover** can be controlled separately from the menu bar. Turn off automatic hiding to keep the docked panel expanded.
 
-Turn on **Enable Hidden Section Beta** in the menu bar to access hidden pins using the arrow at the bottom of the panel. Disabling this option does not delete your pins.
+## Hidden buttons (Beta)
+
+Keep less frequently used pins in a collapsible section. This feature is off by default and supports both regular pins and combination buttons.
+
+1. Turn on **Enable Hidden Section Beta** in the menu bar.
+2. Right-click a pin or combination and choose **Hide** to move it out of the main section.
+3. When hidden buttons exist, click the arrow at the bottom of the panel to expand or collapse them. Expanded buttons can still be triggered normally.
+4. To move a button back to the main section, expand the hidden section, right-click the button, and choose **Unhide**.
+
+Turning off the Beta option hides the section and its arrow; it does not delete buttons or unhide them. Turn it back on to access them again. Hidden states are saved between launches, but the section starts collapsed. Hiding a pin does not remove it from combinations that use it.
 
 ## Combination buttons (Beta)
 
