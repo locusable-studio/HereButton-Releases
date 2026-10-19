@@ -18,9 +18,7 @@ https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
 ## 下载与安装
 
-需要 macOS 14 或更高版本，计划发布的安装包将同时支持 Apple Silicon 和 Intel Mac。
-
-目前尚未正式发布。以下为正式发布后的下载入口和安装步骤；首个 Release 发布后，固定下载链接才会生效。
+需要 macOS 14 或更高版本，安装包同时支持 Apple Silicon 和 Intel Mac。
 
 - [下载最新版 HereButton_latest.dmg](https://github.com/locusable-studio/HereButton-Releases/releases/latest/download/HereButton_latest.dmg)
 - [查看版本与更新说明](https://github.com/locusable-studio/HereButton-Releases/releases)

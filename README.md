@@ -18,9 +18,7 @@ https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
 ## Download and install
 
-Requires macOS 14 or later. The planned release installer will support both Apple Silicon and Intel Macs.
-
-Here Button has not been released yet. The links and installation steps below are for the upcoming release. The direct download link will become available when the first release is published.
+Requires macOS 14 or later. The installer supports both Apple Silicon and Intel Macs.
 
 - [Download HereButton_latest.dmg](https://github.com/locusable-studio/HereButton-Releases/releases/latest/download/HereButton_latest.dmg)
 - [Browse releases and release notes](https://github.com/locusable-studio/HereButton-Releases/releases)
