@@ -18,9 +18,9 @@ https://github.com/user-attachments/assets/b9af42b4-e07f-4c94-b162-b1a26d1b9040
 
 ## Download and install
 
-Requires macOS 14 or later. The release installer supports both Apple Silicon and Intel Macs.
+Requires macOS 14 or later. The planned release installer will support both Apple Silicon and Intel Macs.
 
-Here Button has not been released yet. Purchasing is still being set up. The download links and instructions below are for the upcoming release; the direct download link will become available when the first release is published.
+Here Button has not been released yet. The links and installation steps below are for the upcoming release. The direct download link will become available when the first release is published.
 
 - [Download HereButton_latest.dmg](https://github.com/locusable-studio/HereButton-Releases/releases/latest/download/HereButton_latest.dmg)
 - [Browse releases and release notes](https://github.com/locusable-studio/HereButton-Releases/releases)
@@ -28,7 +28,7 @@ Here Button has not been released yet. Purchasing is still being set up. The dow
 1. Download and open `HereButton_latest.dmg`.
 2. Drag `Here Button.app` into the `Applications` folder.
 3. Open Here Button from Applications, then eject the installer disk in Finder.
-4. Click **Allow Accessibility Access** in the app. Go to **System Settings → Privacy & Security → Accessibility** and enable Here Button. If it is missing from the list, click **+** and add `Here Button.app` from Applications.
+4. Click **Allow Accessibility Access** in the app, or the hand icon if the panel is compact. Go to **System Settings → Privacy & Security → Accessibility** and enable Here Button. If it is missing from the list, click **+** and add `Here Button.app` from Applications.
 5. Return to the app. Once access is enabled, you can start picking buttons. Here Button uses a floating panel and a menu bar icon rather than a separate management window.
 
 Accessibility access lets Here Button read and trigger the controls you select. The source app must also expose those controls through macOS Accessibility; some visible buttons cannot be pinned.
@@ -66,18 +66,18 @@ Keep less frequently used pins in a collapsible section. This feature is off by 
 3. When hidden buttons exist, click the arrow at the bottom of the panel to expand or collapse them. Expanded buttons can still be triggered normally.
 4. To move a button back to the main section, expand the hidden section, right-click the button, and choose **Unhide**.
 
-Turning off the Beta option hides the section and its arrow; it does not delete buttons or unhide them. Turn it back on to access them again. Hidden states are saved between launches, but the section starts collapsed. Hiding a pin does not remove it from combinations that use it.
+Turning off the Beta option hides the section and its arrow; it does not delete buttons or unhide them. Turn it back on to access them again. Hidden states are saved between launches, but the section starts collapsed. Hiding a pin does not remove it from combinations that use it. Hidden combinations also require **Enable Combination Buttons Beta** to be turned on.
 
 ## Combination buttons (Beta)
 
-Turn on **Enable Combination Buttons Beta** in the menu bar, then click the folder-plus button to create a combination. Give it a name and add at least two steps. You can reorder steps and set a delay before each one.
+This feature is off by default. Turn on **Enable Combination Buttons Beta** in the menu bar, then click the folder-plus button to create a combination. Give it a name and add at least two steps. You can reorder steps and set a delay before each one.
 
-Click a combination to run its steps in order. Execution stops if a step fails. Click a running combination again to cancel the remaining steps. Right-click it to edit, remove, or change its background-triggering setting. Turning off the Beta option hides the creation button; saved combinations remain available.
+Click a combination to run its steps in order. Execution stops if a step fails. Click a running combination again to cancel the remaining steps; actions already sent are not undone. Right-click it to edit, remove, or change its background-triggering setting.
+
+Turning off the Beta option hides both the creation button and saved combinations from the panel. Saved combinations are kept and reappear when you turn it back on, unless they are in the hidden section.
 
 ## Compatibility
 
 Here Button depends on the source app's macOS Accessibility support. Some visible buttons cannot be picked, and some controls only work when their app is in the foreground.
 
-- WeChat for macOS 4.1.15: previous local testing did not expose usable controls for the chat interface or sidebar, so those buttons could not be pinned.
-
-These observations apply to specific app versions and controls. Behavior may change when the source app updates. If you encounter an unsupported button, contact us using the email above.
+Support varies by control and may change when the source app updates. If a saved pin no longer matches its original control, pick the button again. When reporting an unsupported control, include the source app's version and the page or button involved.
