@@ -8,7 +8,7 @@ English · [简体中文](README.zh-CN.md)
 
 Pin supported buttons from your Mac apps to a floating panel. Keep frequently used actions together, move the panel wherever you need it, or dock it to the edge of your screen.
 
-Works with buttons in most native Mac apps, Electron apps, and web pages in browsers such as Chrome and Safari, provided the controls are exposed through macOS Accessibility with identifiable information and a press or selection action.
+Supported controls can come from native Mac apps, Electron apps, and web pages in browsers such as Chrome and Safari. Whether a button can be pinned and triggered depends on the individual control: it must expose identifiable information and an executable press or selection operation through macOS Accessibility. Support can vary between buttons within the same app or web page.
 
 Website: [locusable.com/here-button](https://locusable.com/here-button/)
 
