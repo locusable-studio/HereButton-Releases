@@ -8,7 +8,7 @@
 
 把其他 App 中支持辅助功能的按钮固定到桌面浮动面板。集中放置常用操作，拖动面板调整位置，也可吸附到屏幕边缘。
 
-适用于多数原生 Mac App、Electron App，以及 Chrome / Safari 等浏览器里的网页按钮；前提是控件对 macOS 辅助功能（Accessibility）可见，并提供可识别的信息及按下或选择操作。
+支持范围涵盖原生 Mac App、Electron App，以及 Chrome、Safari 等浏览器中的网页。能否固定和触发取决于具体按钮：它需要通过 macOS 辅助功能（Accessibility）提供可识别的控件信息和可执行的按下或选择操作。同一应用或网页中的不同按钮，支持情况也可能不同。
 
 官网：[locusable.com/here-button](https://locusable.com/here-button/)
 
